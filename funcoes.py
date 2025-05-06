@@ -1,4 +1,4 @@
-#versao : 30
+#versao : 31
 import random
 def rolar_dados(qnt):
   lista = []
@@ -176,10 +176,13 @@ def calcula_pontos_quina(l):
 #agora junta tudo aee!! (Eu nn aguento mais)
 def calcula_pontos_regra_avancada(l):
    dic = {}
+   soma = 0
+   for i in l: 
+      soma += i
    dic['cinco_iguais'] = calcula_pontos_quina(l)
    dic['full_house'] = calcula_pontos_full_house(l)
    dic['quadra'] = calcula_pontos_quadra(l)
-   dic['sem_combinacao'] = sum(l)
+   dic['sem_combinacao'] = soma
    dic['sequencia_alta'] = calcula_pontos_sequencia_alta(l)
    dic['sequencia_baixa'] = calcula_pontos_sequencia_baixa(l)
    return dic
