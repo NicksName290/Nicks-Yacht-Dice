@@ -9,7 +9,7 @@ def rolar_dados(qnt):
 def guardar_dado(dados_rolados, dados_no_estoque, dados_para_guardar):
     resposta = []
     dados_no_estoque.append(dados_rolados[dados_para_guardar])
-    rolar = rolar_dados(len(dados_rolados)-dados_para_guardar)
+    rolar = rolar_dados(len(dados_rolados)-1)
     resposta.append(rolar)
     resposta.append(dados_no_estoque)
     return resposta
