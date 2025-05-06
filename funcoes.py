@@ -8,9 +8,9 @@ def rolar_dados(qnt):
   return lista
 #asdsasds
 def guardar_dado(dados_rolados, dados_no_estoque, dados_para_guardar):
-    resposta = []
+    lista = []
     dados_no_estoque.append(dados_rolados[dados_para_guardar])
     del dados_no_estoque[dados_para_guardar]
-    resposta.append(dados_rolados)
-    resposta.append(dados_no_estoque)
-    return resposta
+    lista.append(dados_rolados)
+    lista.append(dados_no_estoque)
+    return lista
