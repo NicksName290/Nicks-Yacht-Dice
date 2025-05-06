@@ -1,4 +1,4 @@
-#versao : 33
+#versao : 34
 import random
 def rolar_dados(qnt):
   lista = []
@@ -173,12 +173,6 @@ def calcula_pontos_quina(l):
       if l.count(i) >= 5:
          return 50
    return 0
-#precisava de soma? E porque nn teve um exercicio pra esse???
-def calcula_pontos_soma(l):
-   soma = 0
-   for i in l:
-      soma += i
-   return soma
 #agora junta tudo aee!! (Eu nn aguento mais)
 def calcula_pontos_regra_avancada(l):
    dic = {}
@@ -198,5 +192,9 @@ def faz_jogada(lista, categoria, cartela):
    pontuacao = calcula_pontos_regra_avancada(lista) 
    for i in cartela:
       if categoria in cartela[i]:
+         if cartela[i] == 'regra_simples':
+            pontuacao = calcula_pontos_regra_simples(lista)
+         else:
+            pontuacao = calcula_pontos_regra_avancada(lista)
          cartela[i][categoria] = pontuacao[categoria]
    return cartela
