@@ -1,3 +1,4 @@
+import random
 def rolar_dados(qnt):
   lista = []
   i = 0
