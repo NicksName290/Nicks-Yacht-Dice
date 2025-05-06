@@ -1,4 +1,4 @@
-#versao : 9
+#versao : 10
 import random
 def rolar_dados(qnt):
   lista = []
