@@ -2,7 +2,7 @@ import random
 def rolar_dados(qnt):
   lista = []
   for a in range(qnt):
-    valor = random.randit(1 , 6)
+    valor = random.randint(1 , 6)
     lista.append(valor)
   return lista
 #PORQUE NN TA SALVANDO??
