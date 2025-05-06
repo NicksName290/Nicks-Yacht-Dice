@@ -1,4 +1,4 @@
-#Versao: 3
+#versao : 10
 import random
 def rolar_dados(qnt):
   lista = []
@@ -6,15 +6,12 @@ def rolar_dados(qnt):
     valor = random.randint(1 , 6)
     lista.append(valor)
   return lista
-#????
-def guardar_dado(dados_rolados, dados_no_estoque, dados_para_guardar):
-    resposta = []
-    dados_no_estoque.append(dados_rolados[dados_para_guardar])
+#asdsasds
+def guardar_dado(rolados, estoque, guardar):
     lista = []
-    for a in range(len(dados_rolados)-1):
-      valor = random.randint(1 , 6)
-      lista.append(valor)
-    resposta.append(lista)
-    resposta.append(dados_no_estoque)
-    return resposta
-    
+    estoque.append(rolados[guardar])
+    del dados_rolados[guardar]
+    lista.append(rolados)
+    lista.append(estoque)
+    return lista
+
