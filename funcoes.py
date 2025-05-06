@@ -1,4 +1,4 @@
-#versao : 25
+#versao : 26
 import random
 def rolar_dados(qnt):
   lista = []
@@ -72,8 +72,11 @@ def calcula_pontos_full_house(lista):
 #Odeio quando alguem consegue um QUADRA, sempre e porque eles comecaram com uma dupla
 def calcula_pontos_quadra(l):
    soma = 0
+   sim = False
    for i in l:
       soma += i
       if l.count(i) == 4:
-        return i
+        sim = True
+   if sim == True : 
+      return i
    return 0
