@@ -1,4 +1,4 @@
-#versao : 20
+#versao : 21
 import random
 def rolar_dados(qnt):
   lista = []
@@ -45,4 +45,16 @@ def calcula_pontos_sequencia_alta(lista):
    for i in lista:
       if i+1 in lista and i+2 in lista and i+3 in lista and i+4 in lista:
          return 30
+   return 0
+#Adoro poker btw, mesmo que nn seja poker. FULL HOUSE
+def calcula_pontos_full_house(lista):
+   dupla = False
+   trio = False
+   for i in lista:
+      if lista.count(i) == 2:
+         dupla = True
+      if lista.count(i) == 3:
+         trio = True
+   if trio == True and dupla == True:
+      return 19
    return 0
