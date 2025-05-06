@@ -1,3 +1,4 @@
+#versao : 5
 import random
 def rolar_dados(qnt):
   lista = []
@@ -13,4 +14,4 @@ def guardar_dado(dados_rolados, dados_no_estoque, dados_para_guardar):
     resposta.append(rolar)
     resposta.append(dados_no_estoque)
     return resposta
-#PORQUE OS SAVES NN VAO???
+
