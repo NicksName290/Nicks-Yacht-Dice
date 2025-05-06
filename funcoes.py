@@ -1,4 +1,4 @@
-#versao : 22
+#versao : 23
 import random
 def rolar_dados(qnt):
   lista = []
@@ -63,9 +63,9 @@ def calcula_pontos_full_house(lista):
       if lista.count(i) == 3:
          trio = True
          if i > maior_trio:
-            soma -= maior_trio*2
+            soma -= maior_trio*3
             maior_trio = i
-            soma += maior_trio*2
+            soma += maior_trio*3
    if trio == True and dupla == True:
       return soma
    return 0
