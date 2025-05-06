@@ -6,7 +6,7 @@ def rolar_dados(qnt):
     valor = random.randint(1 , 6)
     lista.append(valor)
   return lista
-
+#PELO AMOR ATUALIZA LOGO
 def guardar_dado(dados_rolados, dados_no_estoque, dados_para_guardar):
     novo_estoque = dados_no_estoque + [dados_rolados[dados_para_guardar]]
     rolar = rolar_dados(len(dados_rolados) - 1)
