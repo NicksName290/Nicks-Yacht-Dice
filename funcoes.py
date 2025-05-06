@@ -6,7 +6,7 @@ def rolar_dados(qnt):
     valor = random.randint(1 , 6)
     lista.append(valor)
   return lista
-
+#????
 def guardar_dado(dados_rolados, dados_no_estoque, dados_para_guardar):
     resposta = []
     dados_no_estoque.append(dados_rolados[dados_para_guardar])
