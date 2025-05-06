@@ -5,3 +5,4 @@ def rolar_dados(qnt):
     valor = random.randit(1 , 6)
     lista.append(valor)
   return lista
+#PORQUE NN TA SALVANDO??
